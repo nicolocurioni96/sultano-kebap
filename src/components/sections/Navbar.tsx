@@ -19,6 +19,7 @@ export default function Navbar() {
     { label: "Chi Siamo", href: "#story" },
     { label: "Servizi", href: "#services" },
     { label: "Recensioni", href: "#reviews" },
+    { label: "Prenota", href: "#booking" },
     { label: "Contatti", href: "#visit" },
   ];
 

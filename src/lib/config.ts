@@ -1,6 +1,7 @@
 export const businessConfig = {
   // Identity
   name: "Sultano Kebap",
+  category: "restaurant",
   tagline: "Tradizione e creatività nel cuore di Brescia.",
   city: "Brescia",
 
@@ -8,6 +9,7 @@ export const businessConfig = {
   address: "Viale della Stazione, 29, 25122 Brescia BS",
   phone: "+39 351 185 2086",
   email: "",
+  bookingUrl: "",
 
   // Online presence
   googleMapsUrl: "https://maps.google.com/?q=Viale%20della%20Stazione%2C%2029%2C%2025122%20Brescia%20BS",

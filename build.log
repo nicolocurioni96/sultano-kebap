@@ -1,0 +1,35 @@
+   ▲ Next.js 15.1.7
+
+   Creating an optimized production build ...
+ ✓ Compiled successfully
+   Linting and checking validity of types ...
+
+./src/components/sections/Hero.tsx
+46:9  Warning: Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+./src/components/sections/Story.tsx
+42:15  Warning: Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+info  - Need to disable some ESLint rules? Learn more here: https://nextjs.org/docs/app/api-reference/config/eslint#disabling-rules
+   Collecting page data ...
+   Generating static pages (0/5) ...
+   Generating static pages (1/5) 
+   Generating static pages (2/5) 
+   Generating static pages (3/5) 
+ ✓ Generating static pages (5/5)
+   Finalizing page optimization ...
+   Collecting build traces ...
+   Exporting (0/3) ...
+ ✓ Exporting (3/3)
+
+Route (app)                              Size     First Load JS
+┌ ○ /                                    52.4 kB         158 kB
+└ ○ /_not-found                          982 B           106 kB
++ First Load JS shared by all            105 kB
+  ├ chunks/4bd1b696-5022690b7d5cd472.js  53 kB
+  ├ chunks/517-88f095a843ee10d0.js       50.4 kB
+  └ other shared chunks (total)          1.82 kB
+
+
+○  (Static)  prerendered as static content
+
