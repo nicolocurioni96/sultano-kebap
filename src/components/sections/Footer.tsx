@@ -1,10 +1,12 @@
 "use client";
 
 import { businessConfig } from "@/lib/config";
-import { Phone, MapPin } from "lucide-react";
+import { Phone, MapPin, Instagram, Facebook } from "lucide-react";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
+  const { social } = businessConfig;
+  const hasSocial = social && (social.instagram || social.facebook);
 
   return (
     <footer className="bg-brand-dark text-white py-16">
@@ -17,6 +19,32 @@ export default function Footer() {
             <p className="text-white/60 leading-relaxed mb-6">
               {businessConfig.tagline}
             </p>
+            {hasSocial && (
+              <div className="flex items-center gap-4">
+                {social.instagram && (
+                  <a
+                    href={social.instagram}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-brand-accent hover:text-brand-dark transition-all"
+                    aria-label="Instagram"
+                  >
+                    <Instagram className="w-5 h-5" />
+                  </a>
+                )}
+                {social.facebook && (
+                  <a
+                    href={social.facebook}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-brand-accent hover:text-brand-dark transition-all"
+                    aria-label="Facebook"
+                  >
+                    <Facebook className="w-5 h-5" />
+                  </a>
+                )}
+              </div>
+            )}
           </div>
 
           <div>

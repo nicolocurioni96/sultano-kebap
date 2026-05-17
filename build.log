@@ -23,7 +23,7 @@ info  - Need to disable some ESLint rules? Learn more here: https://nextjs.org/d
  ✓ Exporting (3/3)
 
 Route (app)                              Size     First Load JS
-┌ ○ /                                    52.4 kB         158 kB
+┌ ○ /                                    52.7 kB         158 kB
 └ ○ /_not-found                          982 B           106 kB
 + First Load JS shared by all            105 kB
   ├ chunks/4bd1b696-5022690b7d5cd472.js  53 kB

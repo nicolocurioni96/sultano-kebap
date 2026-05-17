@@ -99,6 +99,12 @@ export const businessConfig = {
     }
   ],
 
+  // Social Media
+  social: {
+    instagram: "",
+    facebook: "",
+  },
+
   // Hours
   hours: [
     "Lun – Ven: 9:00 – 19:00",
